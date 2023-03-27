@@ -7,6 +7,9 @@
   padding: 40px 160px;
 
   box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  background-color: black;
 }
 .menuContainer {
   display: flex;
@@ -17,8 +20,9 @@
   display: flex;
   gap: 2rem;
   cursor: pointer;
-  /* font-size: 20px; */
+  color: white;
 }
+
 button {
   padding: 8px 16px;
   box-sizing: border-box;
