@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button";
 import "./Navbar.css";
 const logo = (
   <svg
@@ -103,7 +104,7 @@ const Navbar = () => {
           <li>Menu 3</li>
           <li>Menu 4</li>
         </ul>
-        <button>Sign up</button>
+        <Button btnText={"Contact Us"} btnBorder={"1px solid white"} />
       </div>
     </div>
   );
