@@ -1,58 +1,10 @@
 .App {
   text-align: center;
+  display: grid;
+  place-items: center;
+  gap: 2rem;
 }
 
-.hero {
-  width: 100%;
-  /* min-height: 100vh; */
-  display: grid;
-  place-items: center;
-  position: relative;
-  overflow: hidden;
-  padding-top: 20%;
-  gap: 82px;
-}
-.herocontainer {
-  width: 800px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  gap: 40px;
-  position: relative;
-}
-.herocontainer h1 {
-  font-weight: 800;
-  font-size: 56px;
-  line-height: 120%;
-  letter-spacing: 0.01em;
-}
-.herocontainer p {
-  width: 45ch;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 0 1rem;
-  box-sizing: border-box;
-  line-height: 155%;
-  letter-spacing: 0.01em;
-}
-.btnContainer {
-  width: 70%;
-  display: grid;
-  place-items: center;
-  grid-template-columns: auto auto;
-}
-.tube {
-  position: absolute;
-  width: 183.1px;
-  height: 620.79px;
-  rotate: 45deg;
-  background: #7373ff;
-  opacity: 0.82;
-  border-radius: 91.5514px;
-  z-index: -1;
-}
 .Pagebutton {
   width: 180px;
   height: 60px;
@@ -69,62 +21,4 @@
   /* border: 1px solid white; */
   color: white;
   cursor: pointer;
-}
-.laptopMockup {
-  width: 1000px;
-  height: fit-content;
-  position: relative;
-  top: -20px;
-}
-
-.analytics {
-  width: 80%;
-  height: 85%;
-  position: absolute;
-  top: 20px;
-  left: 100px;
-  background-color: #7373ff;
-  overflow: hidden;
-}
-.laptopName {
-  width: 200px;
-  position: absolute;
-  bottom: 40px;
-  left: 400px;
-  color: silver;
-  display: grid;
-  place-items: center;
-  /* background-color: #7373ff; */
-  font-weight: 700;
-}
-.analytics_image {
-  width: 900px;
-  height: 650px;
-  position: relative;
-  left: -42px;
-  top: -72px;
-  object-fit: fill;
-}
-.camera {
-  position: absolute;
-  top: 0;
-  left: 50%;
-}
-.laptopMockupContainer {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  background-image: linear-gradient(90.32deg, #7e55ff 0.77%, #6b50ff 22.46%);
-}
-.laptopContainer {
-  min-width: 150%;
-  display: grid;
-  place-items: center;
-  background-color: #ffffff;
-  border-radius: 50% 50% 0 0;
-  position: relative;
-  top: 20px;
 }

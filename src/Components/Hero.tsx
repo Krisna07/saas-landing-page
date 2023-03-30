@@ -17,15 +17,18 @@ const Tube = ({ left, top, rotate, zindex }: any) => {
 const Hero = () => {
   return (
     <div className="hero">
+      <div className="tubeBackgroundContainer">
+        <Tube left="-10" top="-10" rotate="-45deg" />
+        <Tube left="45" top="-5" rotate="-45deg" />
+        <Tube left="-10" top="10" rotate="-45deg" />
+        <Tube left="20" top="-25" rotate="-45deg" />
+        <Tube left="80" top="-20" rotate="-30deg" />
+        <Tube left="100" top="10" />
+      </div>
       <div className="herocontainer">
-        <Tube left="-30" top="-190" rotate="-40deg" />
-        <Tube left="50" top="-150" rotate="-40deg" />
-
-        <Tube left="-40" top="-40" rotate="-35deg" />
-        <Tube left="120" top="40" rotate="140deg" zindex="10" />
-        <Tube left="40" top="-80" rotate="-40deg" />
-        <Tube left="110" top="-80" rotate="40deg" zindex="11" />
-        <h1>Your digital business is in good hands with us !</h1>
+        <h1>
+          Your digital business is in <br /> good hands with us !
+        </h1>
         <p>
           Make your work easier with an integrated ecosystem that lets all
           department work properly together.
