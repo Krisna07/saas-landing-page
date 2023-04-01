@@ -100,9 +100,9 @@ const Navbar = () => {
       <div className="menuContainer">
         <ul className="menus">
           <li>Home</li>
-          <li>Contacts</li>
-          <li>Menu 3</li>
-          <li>Menu 4</li>
+          <li>About Us</li>
+          <li>Pricing</li>
+          <li>Contact Us</li>
         </ul>
         <Button btnText={"Contact Us"} btnBorder={"1px solid white"} />
       </div>
