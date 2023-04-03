@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../Button";
+import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 
 const logo = (
   <svg
@@ -94,16 +95,47 @@ const logo = (
 );
 
 const Navbar = () => {
+  const [menu, setMenu] = useState<Boolean>(false);
+  const checkScroll = () => {
+    !menu
+      ? (document.body.style.overflowY = "hidden")
+      : (document.body.style.overflowY = "scroll");
+  };
+  checkScroll();
   return (
-    <div className="navigationContainer">
-      <div className="logContainer">{logo}</div>
-      <div className="menuContainer">
-        <ul className="menus">
+    <div
+      className="navigationContainer"
+      style={{ height: `${!menu ? "100vh" : "10vh"}` }}
+    >
+      <div className="logoContainer">
+        <span>{logo}</span>
+        <span className="burgurmenu">
+          {!menu ? (
+            <RxCross1 onClick={() => setMenu(!menu)} />
+          ) : (
+            <RxHamburgerMenu onClick={() => setMenu(!menu)} />
+          )}
+        </span>
+      </div>
+      <div
+        className="mobileMenu"
+        style={menu ? { opacity: "0" } : { opacity: "1" }}
+      >
+        <div className="menus">
           <li>Home</li>
           <li>About Us</li>
           <li>Pricing</li>
           <li>Contact Us</li>
-        </ul>
+        </div>
+        <Button btnText={"Contact Us"} btnBorder={"1px solid white"} />
+      </div>
+      <div className="menuContainer">
+        <div className="menus">
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Pricing</li>
+          <li>Contact Us</li>
+        </div>
         <Button btnText={"Contact Us"} btnBorder={"1px solid white"} />
       </div>
     </div>

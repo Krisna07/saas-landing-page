@@ -1,6 +1,5 @@
 import React from "react";
 
-import "./App.css";
 import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar/Navbar";
 import "./Styles/Hero.css";
@@ -14,6 +13,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
+      {/* <Navbar />
+    
       <div className="features">
         <div className="heading">
           <h2 className="headingMain">
@@ -27,7 +28,7 @@ function App() {
           <Features />
         </div>
       </div>
-      <MoreFeatures />
+      <MoreFeatures /> */}
     </div>
   );
 }
