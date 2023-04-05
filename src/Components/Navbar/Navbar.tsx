@@ -127,7 +127,9 @@ const Navbar = () => {
           <li>Pricing</li>
           <li>Contact Us</li>
         </div>
-        <Button btnText={"Contact Us"} btnBorder={"1px solid white"} />
+        <div className="btnContainer">
+          <Button btnText={"Contact Us"} btnBorder={"1px solid white"} />
+        </div>
       </div>
       <div className="menuContainer">
         <div className="menus">

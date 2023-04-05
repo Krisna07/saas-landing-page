@@ -1,38 +1,42 @@
 .navigationContainer {
   min-width: 100%;
-  background: rgb(99, 99, 96);
-  display: grid;
-  grid-auto-flow: row;
-  place-items: center;
+  background: rgb(14, 13, 13);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
   box-sizing: border-box;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 999;
   overflow: hidden;
   transition: all ease-in 200ms;
+  color: rgba(255, 255, 255, 0.692);
 }
 .mobileMenu {
   width: 100%;
   height: 90vh;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
-  position: relative;
   transition: opacity ease-in 300ms;
 }
-
+.mobileMenu .btnContainer {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  align-items: flex-start !important;
+}
 .menuContainer {
   display: none;
 }
 .logoContainer {
-  display: grid;
-  place-items: center;
-  grid-auto-flow: column;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 1rem;
   width: 100%;
-  height: 10vh;
-  /* background-color: rgb(65, 49, 30); */
+  min-height: 10vh;
   box-sizing: border-box;
 }
 .menus {
@@ -42,22 +46,26 @@
   flex-direction: column;
 }
 .menus li {
-  width: 100%;
+  width: 40%;
+  display: flex;
   text-align: left;
-  background-color: bisque;
   box-sizing: border-box;
   padding: 1em;
+  position: relative;
+  z-index: 10;
 }
 .menus li:hover {
-  background: yellow;
+  width: 100%;
+  background-color: var(--primaryColor);
+  /* background-color: aqua; */
+  transition: all 200ms ease-in-out;
+  color: black;
 }
-
 @media only screen and (min-width: 750px) {
   .navigationContainer {
     width: 100%;
     height: fit-content !important;
-    grid-auto-flow: column;
-
+    flex-direction: row;
     padding: 1rem;
   }
 

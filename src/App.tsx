@@ -7,12 +7,18 @@ import "./Styles/Section.css";
 import "./Styles/Navbar.css";
 import Features from "./Components/Sections/Features";
 import MoreFeatures from "./Components/Sections/MoreFeatures";
+import SectionType from "./Components/Sections/SectionType";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Hero />
+      <SectionType
+        heading="Software Solutions That Fit Your Needs"
+        sectionDes={" The Features to boost your productivity"}
+        sectionItems={<Features />}
+      />
       {/* <Navbar />
     
       <div className="features">

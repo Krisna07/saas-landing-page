@@ -1,5 +1,14 @@
 import React from "react";
 import Button from "./Button";
+import {
+  FaBars,
+  FaBatteryHalf,
+  FaLocationArrow,
+  FaNetworkWired,
+  FaSignal,
+  FaWifi,
+} from "react-icons/fa";
+import { BsBatteryHalf } from "react-icons/bs";
 const Tube = ({ left, top, rotate, zindex }: any) => {
   return (
     <div
@@ -63,7 +72,69 @@ const Hero = () => {
             </div>
             <span className="laptopName">Macbook Pro</span>
           </div>
+          <div className="phoneContainer">
+            <div className="iphoneTop">
+              <div className="timeContainer">
+                <span>11:11</span>
+                <span
+                  style={{
+                    width: "15px",
+                    height: "15px",
+                    color: "white",
+                    background: "blue",
+                    borderRadius: "50%",
+                    fontSize: "10px",
+                    display: "grid",
+                    placeItems: "center",
+                  }}
+                >
+                  <FaLocationArrow />
+                </span>
+              </div>
+              <div className="iphoneCamera">
+                <div className="Frontcamera">
+                  <img
+                    className="camera"
+                    src="https://s3-alpha-sig.figma.com/img/2a87/89ed/b56d282b5aa545a970dfbe5ff401e172?Expires=1681084800&Signature=fkl3gFaObngac7D6m2tGJ~hode-P6yPWa1AmF5fUs23FKD0~IOAYIQ1d9spmRdlNCAIiG5h3m~G8aUonNStc-W5XnKVy~TmEmIhDLuJ3pqfBUHOhX~b1kblM0hgQCCtaR17Z~F8FId2sGXIDulcCoQXznx-ciXnRh5dGKXtwXuu3kIuPxcEhXcB7y19JRUdc1KEJn9FC6M-n9PfPlZqVUU288KSFBH0uFmsX1cDgKUz1CGQtQK8SklLPIwbGVkQgtmk5IPl9y8krH7fMO7pRCAfP7XzfaZ20Hw-6A9WwOgEZP~7Sa9TUbm~WHbzdPKG1yEfcK~-yjY3kc6LqzltadA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="timeContainer">
+                <FaSignal />
+                <FaWifi />
+                <BsBatteryHalf fontSize={"20px"} />
+              </div>
+            </div>
+
+            <div className="analytics">
+              <img
+                className="analytics_image"
+                src="https://s3-alpha-sig.figma.com/img/3a82/b254/7ad7b570982e89338bc2c12e7e3b3b7c?Expires=1681084800&Signature=BcBNABO4TWXkO~NqKHrZJeXB7YenUZi0yFD0ND-~2MeDZy8CabTdvHfDAPy6F6CYpfYioHehS3g7WAQIOT0CgLcPqw2aZTUxQc8PXZDBK4zy3EFAplwGbFnY-E4~ektg-eXihrgqEla~av3OqSrHXNu-lUcF1JhGBEZq0PScUlJQavD1RU2VDzG-653~cD1slx3O1it04Pfs4CdY7bHgnj~aGVOfeKxlKRmEzcIAKfR0gjn8PmGLmxYNzDqubCHOHuOfqtHWU0D7Hwi0GKtk7FMgJlg2pdrLOYaxLw0vkUBytRMBqVjgvFLri18C05ihR6Lr1ED9Urf~E5ZI4-vrHQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="tabContainer">
+            <div className="tabMockup">
+              <div className="Frontcamera">
+                <img
+                  className="camera"
+                  src="https://s3-alpha-sig.figma.com/img/2a87/89ed/b56d282b5aa545a970dfbe5ff401e172?Expires=1681084800&Signature=fkl3gFaObngac7D6m2tGJ~hode-P6yPWa1AmF5fUs23FKD0~IOAYIQ1d9spmRdlNCAIiG5h3m~G8aUonNStc-W5XnKVy~TmEmIhDLuJ3pqfBUHOhX~b1kblM0hgQCCtaR17Z~F8FId2sGXIDulcCoQXznx-ciXnRh5dGKXtwXuu3kIuPxcEhXcB7y19JRUdc1KEJn9FC6M-n9PfPlZqVUU288KSFBH0uFmsX1cDgKUz1CGQtQK8SklLPIwbGVkQgtmk5IPl9y8krH7fMO7pRCAfP7XzfaZ20Hw-6A9WwOgEZP~7Sa9TUbm~WHbzdPKG1yEfcK~-yjY3kc6LqzltadA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  alt=""
+                />
+              </div>
+              <div className="analytics">
+                <img
+                  className="analytics_image"
+                  src="https://s3-alpha-sig.figma.com/img/3a82/b254/7ad7b570982e89338bc2c12e7e3b3b7c?Expires=1681084800&Signature=BcBNABO4TWXkO~NqKHrZJeXB7YenUZi0yFD0ND-~2MeDZy8CabTdvHfDAPy6F6CYpfYioHehS3g7WAQIOT0CgLcPqw2aZTUxQc8PXZDBK4zy3EFAplwGbFnY-E4~ektg-eXihrgqEla~av3OqSrHXNu-lUcF1JhGBEZq0PScUlJQavD1RU2VDzG-653~cD1slx3O1it04Pfs4CdY7bHgnj~aGVOfeKxlKRmEzcIAKfR0gjn8PmGLmxYNzDqubCHOHuOfqtHWU0D7Hwi0GKtk7FMgJlg2pdrLOYaxLw0vkUBytRMBqVjgvFLri18C05ihR6Lr1ED9Urf~E5ZI4-vrHQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
         </div>
+        <div className="backgroundWhite"></div>
       </div>
     </div>
   );
