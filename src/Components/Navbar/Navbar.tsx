@@ -95,7 +95,7 @@ const logo = (
 );
 
 const Navbar = () => {
-  const [menu, setMenu] = useState<Boolean>(false);
+  const [menu, setMenu] = useState<Boolean>(true);
   const checkScroll = () => {
     !menu
       ? (document.body.style.overflowY = "hidden")
@@ -122,10 +122,10 @@ const Navbar = () => {
         style={menu ? { opacity: "0" } : { opacity: "1" }}
       >
         <div className="menus">
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Pricing</li>
-          <li>Contact Us</li>
+          <li className="phoneMenu">Home</li>
+          <li className="phoneMenu">About Us</li>
+          <li className="phoneMenu">Pricing</li>
+          <li className="phoneMenu">Contact Us</li>
         </div>
         <div className="btnContainer">
           <Button btnText={"Contact Us"} btnBorder={"1px solid white"} />
@@ -133,10 +133,10 @@ const Navbar = () => {
       </div>
       <div className="menuContainer">
         <div className="menus">
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Pricing</li>
-          <li>Contact Us</li>
+          <li className="defaultMenu">Home</li>
+          <li className="defaultMenu">About Us</li>
+          <li className="defaultMenu">Pricing</li>
+          <li className="defaultMenu">Contact Us</li>
         </div>
         <Button btnText={"Contact Us"} btnBorder={"1px solid white"} />
       </div>
