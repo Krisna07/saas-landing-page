@@ -19,22 +19,9 @@ function App() {
         sectionDes={" The Features to boost your productivity"}
         sectionItems={<Features />}
       />
-      {/* <Navbar />
-    
-      <div className="features">
-        <div className="heading">
-          <h2 className="headingMain">
-            Software Solutions That <br /> Fits Your Needs
-          </h2>
-          <p className="paragraphMain">
-            The Features to boost your productivity
-          </p>
-        </div>
-        <div className="featursItems">
-          <Features />
-        </div>
-      </div>
-      <MoreFeatures /> */}
+      <section className="sections">
+        <MoreFeatures />
+      </section>
     </div>
   );
 }

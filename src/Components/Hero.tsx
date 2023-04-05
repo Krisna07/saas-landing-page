@@ -29,9 +29,9 @@ const Hero = () => {
   const [date, setDate] = useState<Date>(new Date());
 
   useEffect(() => {
-    setInterval(() => {
-      setDate(new Date());
-    }, 1000);
+    // setInterval(() => {
+    //   setDate(new Date());
+    // }, 1000);
     setTime(
       (date.getHours() > 12 ? date.getHours() - 12 : date.getHours()) +
         ":" +

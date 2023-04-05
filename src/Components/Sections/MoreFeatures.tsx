@@ -3,7 +3,7 @@ import Button from "../Button";
 
 const MoreFeatures = () => {
   return (
-    <div className="featureSection">
+    <div className="moreFeaturesContainer">
       <div className="featuresLeft">
         <div className="heading">
           <h2 className="headingMain">Easy Advance Protection</h2>
@@ -29,8 +29,6 @@ const MoreFeatures = () => {
           />
         </div>
         <svg
-          width="680"
-          height="430"
           viewBox="0 0 680 430"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

@@ -105,7 +105,7 @@ const Navbar = () => {
   return (
     <div
       className="navigationContainer"
-      style={{ height: `${!menu ? "100vh" : "10vh"}` }}
+      style={{ height: `${!menu ? "100vh" : "60px"}` }}
     >
       <div className="logoContainer">
         <span>{logo}</span>

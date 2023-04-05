@@ -15,15 +15,24 @@
 }
 .mobileMenu {
   width: 100%;
-  height: 90vh;
+  height: 93vh;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   transition: opacity ease-in 300ms;
+  overflow-y: scroll;
+}
+.mobileMenu::-webkit-scrollbar {
+  width: 1px;
+  background-color: var(--headingColor);
+}
+.mobileMenu::-webkit-scrollbar-thumb {
+  max-height: 8px;
+  background-color: var(--primaryColor);
 }
 .mobileMenu .btnContainer {
   width: 100%;
-  padding: 1rem;
+
   box-sizing: border-box;
   align-items: flex-start !important;
 }
@@ -31,13 +40,15 @@
   display: none;
 }
 .logoContainer {
+  width: 100%;
+  height: 60px;
   display: flex;
   align-items: center;
+
   justify-content: space-between;
-  padding: 1rem;
-  width: 100%;
-  min-height: 10vh;
   box-sizing: border-box;
+
+  padding: 1rem;
 }
 .menus {
   width: 100%;
@@ -50,7 +61,7 @@
   display: flex;
   text-align: left;
   box-sizing: border-box;
-  padding: 1em;
+  padding: 1rem;
   position: relative;
   z-index: 10;
 }
@@ -83,22 +94,28 @@
   .navigationContainer {
     width: 100%;
     height: fit-content !important;
+    flex-basis: auto;
     flex-direction: row;
-    padding: 1rem;
+    box-sizing: border-box;
+    padding: 0 1rem;
   }
 
   .menuContainer {
-    width: 100%;
+    /* width: 100%; */
     flex-basis: 2/3;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2em;
   }
+  .logoContainer {
+    flex-basis: 1/3;
+    padding: 0;
+  }
   .menus {
     width: 100%;
     flex-direction: row;
-    padding: 1rem;
+    /* padding: 1rem; */
   }
   .menus li {
     width: fit-content;
