@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "./Button";
 import {
   FaBars,
@@ -9,6 +9,7 @@ import {
   FaWifi,
 } from "react-icons/fa";
 import { BsBatteryHalf } from "react-icons/bs";
+
 const Tube = ({ left, top, rotate, zindex }: any) => {
   return (
     <div
@@ -24,6 +25,22 @@ const Tube = ({ left, top, rotate, zindex }: any) => {
 };
 
 const Hero = () => {
+  const [time, setTime] = useState<String>();
+  const [date, setDate] = useState<Date>(new Date());
+
+  useEffect(() => {
+    setInterval(() => {
+      setDate(new Date());
+    }, 1000);
+    setTime(
+      (date.getHours() > 12 ? date.getHours() - 12 : date.getHours()) +
+        ":" +
+        date.getMinutes()
+    );
+    console.log(navigator.getBattery());
+    // console.log(date);
+    clearInterval();
+  }, [date]);
   return (
     <div className="hero">
       <div className="tubeBackgroundContainer">
@@ -76,7 +93,7 @@ const Hero = () => {
             <div className="iphoneMockup">
               <div className="iphoneTop">
                 <div className="timeContainer">
-                  <span>11:11</span>
+                  <span>{time}</span>
                   <span
                     style={{
                       width: "15px",
