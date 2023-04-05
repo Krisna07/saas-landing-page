@@ -35,12 +35,13 @@ const Hero = () => {
     setTime(
       (date.getHours() > 12 ? date.getHours() - 12 : date.getHours()) +
         ":" +
-        date.getMinutes()
+        date.getMinutes().toFixed()
     );
-    console.log(navigator.getBattery());
+
     // console.log(date);
     clearInterval();
   }, [date]);
+
   return (
     <div className="hero">
       <div className="tubeBackgroundContainer">
