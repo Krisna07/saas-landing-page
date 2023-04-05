@@ -124,6 +124,7 @@
   display: grid;
   place-items: center;
   grid-template-columns: 1fr;
+  gap: 16px;
 }
 .featuresLeft {
   width: 100%;
@@ -133,26 +134,39 @@
   padding: 1rem;
   box-sizing: border-box;
   gap: 40px;
+  position: relative;
+
   /* background-color: #907be2; */
 }
 .featuresRight {
+  width: 100%;
+  text-align: left;
+  display: grid;
+  place-items: left;
+  padding: 1rem;
+  box-sizing: border-box;
+  gap: 40px;
   position: relative;
 }
-.featuresRight svg {
-  /* width: 400px;
-  height: 400px; */
+.featureSvgs {
+  width: 90%;
   position: absolute;
-  top: 10%;
-  left: -8%;
+  bottom: -20%;
+  left: 0;
 }
-.rightImaage {
+.featureImage {
   width: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: end;
 }
-.rightImaage img {
+.featureImage img {
   width: 80%;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 @media (min-width: 700px) {
   .sectionFeatures {
