@@ -8,6 +8,7 @@ import "./Styles/Navbar.css";
 import Features from "./Components/Sections/Features";
 import MoreFeatures from "./Components/Sections/MoreFeatures";
 import SectionType from "./Components/Sections/SectionType";
+import Testimonila from "./Components/Sections/Testimonila";
 
 function App() {
   const features = [
@@ -230,7 +231,7 @@ function App() {
       <SectionType
         heading="Customer Testimonial"
         sectionDes={" The Features to boost your productivity"}
-        sectionItems={<Features />}
+        sectionItems={<Testimonila />}
       />
     </div>
   );
