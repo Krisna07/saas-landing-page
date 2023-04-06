@@ -11,6 +11,8 @@ import SectionType from "./Components/Sections/SectionType";
 import Testimonila from "./Components/Sections/Testimonila";
 import Pricings from "./Components/Sections/Pricings";
 import TrialForm from "./Components/Sections/TrialForm";
+import News from "./Components/Sections/News";
+import Story from "./Components/Sections/Story";
 
 function App() {
   const features = [
@@ -237,6 +239,8 @@ function App() {
       />
       <Pricings />
       <TrialForm />
+      <News />
+      <Story />
     </div>
   );
 }
