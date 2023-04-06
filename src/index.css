@@ -54,3 +54,56 @@ p {
   color: white;
   cursor: pointer;
 }
+.footerSection {
+  max-width: 100%;
+  padding: 100px 0;
+  background-color: black;
+  color: white;
+}
+.footerContainer {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  /* place-items: left;
+  justify-content: space-between; */
+  gap: 80px !important;
+}
+.FooterlogoContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: antiquewhite; */
+}
+.subscribeForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form {
+  display: flex;
+  gap: 1rem;
+}
+.subscribeForm input {
+  width: 500px;
+  border-radius: 20px;
+  padding: 0 1rem;
+  outline: none;
+  border: 1px solid var(--primaryColor);
+}
+.footMenuContainer {
+  width: 100%;
+  display: grid;
+  place-items: left;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.footerItem {
+  color: rgba(184, 184, 184, 0.89);
+  font-weight: 600;
+}
+.footerItem:hover {
+  color: white;
+}

@@ -60,24 +60,26 @@ const News = () => {
             btnBorder="1px solid var(--primaryColor)"
           />
         </div>
-        <div className="newsSection">
-          {news.map((item) => (
-            <div key={item.type} className="newsContainer">
-              <div className="newsImage">
-                <img src={item.image} alt="" width={"100%"} height="100%" />
-              </div>
-              <div className="newsdes">
-                <div className="newsReadDes">
-                  <span>{item.type}</span>
-                  <span>5 min read</span>
+        <div className="newsSlider">
+          {" "}
+          <div className="newsSection">
+            {news.map((item) => (
+              <div key={item.type} className="newsContainer">
+                <div className="newsImage">
+                  <img src={item.image} alt="" width={"100%"} height="100%" />
                 </div>
-                <h2 className="newsHeading">{item.title}</h2>
-                <p>{item.des}</p>
+                <div className="newsdes">
+                  <div className="newsReadDes">
+                    <span>{item.type}</span>
+                    <span>5 min read</span>
+                  </div>
+                  <h2 className="newsHeading">{item.title}</h2>
+                  <p>{item.des}</p>
+                  <ReadMoreBtn />
+                </div>
               </div>
-
-              <ReadMoreBtn />
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -13,6 +13,7 @@ import Pricings from "./Components/Sections/Pricings";
 import TrialForm from "./Components/Sections/TrialForm";
 import News from "./Components/Sections/News";
 import Story from "./Components/Sections/Story";
+import Footer from "./Components/Sections/Footer";
 
 function App() {
   const features = [
@@ -241,6 +242,7 @@ function App() {
       <TrialForm />
       <News />
       <Story />
+      <Footer />
     </div>
   );
 }
