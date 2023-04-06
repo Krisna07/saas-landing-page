@@ -43,7 +43,7 @@ const Hero = () => {
   }, [date]);
 
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <div className="tubeBackgroundContainer">
         <Tube left="-10" top="-10" rotate="-45deg" />
         <Tube left="45" top="-5" rotate="-45deg" />

@@ -108,7 +108,7 @@ const Footer = () => {
     { label: "Testimonials", link: "/testimonials" },
   ];
   return (
-    <div className="sections footerSection">
+    <div className="sections footerSection" id="contact us">
       <div className="sectionContainer footerContainer">
         <div className="FooterlogoContainer">
           <div className="logo">{logo}</div>

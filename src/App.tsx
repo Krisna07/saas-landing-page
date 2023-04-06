@@ -222,6 +222,7 @@ function App() {
       <Hero />
       <SectionType
         heading="Software Solutions That Fit Your Needs"
+        id="about us"
         sectionDes={" The Features to boost your productivity"}
         sectionItems={<Features />}
       />
@@ -235,6 +236,7 @@ function App() {
       ))}
       <SectionType
         heading="Customer Testimonial"
+        id=""
         sectionDes={" The Features to boost your productivity"}
         sectionItems={<Testimonila />}
       />

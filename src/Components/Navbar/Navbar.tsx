@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import Button from "../Button";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { Link, animateScroll as scroll } from "react-scroll";
+
 const logo = (
   <svg
     width="160"
@@ -102,6 +105,7 @@ const Navbar = () => {
       : (document.body.style.overflowY = "scroll");
   };
   checkScroll();
+  const tabs = ["Home", "About Us", "Pricing", "Story", "Contact Us"];
   return (
     <div
       className="navigationContainer"
@@ -122,10 +126,18 @@ const Navbar = () => {
         style={menu ? { opacity: "0" } : { opacity: "1" }}
       >
         <div className="menus">
-          <li className="phoneMenu">Home</li>
-          <li className="phoneMenu">About Us</li>
-          <li className="phoneMenu">Pricing</li>
-          <li className="phoneMenu">Contact Us</li>
+          {tabs.map((tab: any) => (
+            <Link
+              className="mobileMenuItems"
+              onClick={() => setMenu(!menu)}
+              smooth={true}
+              key={tab}
+              activeClass="active"
+              to={tab.toLowerCase()}
+            >
+              {tab}
+            </Link>
+          ))}
         </div>
         <div className="btnContainer">
           <Button btnText={"Contact Us"} btnBorder={"1px solid white"} />
@@ -133,10 +145,18 @@ const Navbar = () => {
       </div>
       <div className="menuContainer">
         <div className="menus">
-          <li className="defaultMenu">Home</li>
-          <li className="defaultMenu">About Us</li>
-          <li className="defaultMenu">Pricing</li>
-          <li className="defaultMenu">Contact Us</li>
+          {tabs.map((tab: any) => (
+            <Link
+              className="defaultMenu"
+              onClick={() => setMenu(!menu)}
+              smooth={true}
+              key={tab}
+              activeClass="active"
+              to={tab.toLowerCase()}
+            >
+              {tab}
+            </Link>
+          ))}
         </div>
         <Button btnText={"Contact Us"} btnBorder={"1px solid white"} />
       </div>

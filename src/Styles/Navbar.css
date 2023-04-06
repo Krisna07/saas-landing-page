@@ -56,7 +56,7 @@
   align-items: left;
   flex-direction: column;
 }
-.menus li {
+.mobileMenuItems {
   width: 40%;
   display: flex;
   text-align: left;
@@ -64,8 +64,11 @@
   padding: 1rem;
   position: relative;
   z-index: 10;
+  text-decoration: none;
+  color: white;
+  scroll-behavior: smooth;
 }
-.menus .phoneMenu:hover {
+.mobileMenuItems:hover {
   width: 100%;
   background-color: var(--primaryColor);
   /* background-color: aqua; */
@@ -77,6 +80,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  padding: 1rem;
 }
 
 .defaultMenu:hover::after {
@@ -115,10 +119,12 @@
   .menus {
     width: 100%;
     flex-direction: row;
+    gap: 1rem;
     /* padding: 1rem; */
   }
-  .menus li {
-    width: fit-content;
+  .menus a {
+    width: max-content;
+    text-decoration: none;
   }
   .burgurmenu,
   .mobileMenu {

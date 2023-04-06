@@ -44,7 +44,7 @@ const News = () => {
   ];
 
   return (
-    <div className="sections">
+    <div className="sections" id="story">
       <div className="sectionContainer newsComponent">
         <div className="headingConatiner">
           <div className="headingInfo">

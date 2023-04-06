@@ -43,7 +43,7 @@ const Pricings = () => {
     },
   ];
   return (
-    <div className="sections">
+    <div className="sections" id="pricing">
       <div className="sectionContainer">
         <div className="sectionHeading">
           <h2 className="headingMain">Simple and Flexible pricings</h2>
