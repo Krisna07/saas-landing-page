@@ -350,7 +350,9 @@ const Story = () => {
   ];
   return (
     <div className="sections ">
-      <div className="sectionCurve"></div>
+      <div className="sectionCurve">
+        <div className="whiteSection"></div>
+      </div>
       <div className="sectionContainer sponsersSection">
         <div className="sectionHeading">
           <h2 className="headingMain">We can make story true</h2>
@@ -362,7 +364,9 @@ const Story = () => {
         </div>
         <div className="sponsers">{sponsers.map((svgs) => svgs)}</div>
       </div>
-      <div className="sectionCurve2"></div>
+      <div className="sectionCurve2">
+        <div className="whiteSection"></div>
+      </div>
     </div>
   );
 };
