@@ -1,5 +1,4 @@
 import React from "react";
-import { FaSlack } from "react-icons/fa";
 
 const Story = () => {
   const sponsers = [

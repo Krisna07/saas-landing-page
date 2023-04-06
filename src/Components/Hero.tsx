@@ -1,13 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Button from "./Button";
-import {
-  FaBars,
-  FaBatteryHalf,
-  FaLocationArrow,
-  FaNetworkWired,
-  FaSignal,
-  FaWifi,
-} from "react-icons/fa";
+import { FaLocationArrow, FaSignal, FaWifi } from "react-icons/fa";
 import { BsBatteryHalf } from "react-icons/bs";
 
 const Tube = ({ left, top, rotate, zindex }: any) => {

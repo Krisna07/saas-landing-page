@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
-  FaArrowLeft,
-  FaBackward,
   FaChevronLeft,
   FaChevronRight,
-  FaForward,
   FaRegStar,
   FaStar,
 } from "react-icons/fa";

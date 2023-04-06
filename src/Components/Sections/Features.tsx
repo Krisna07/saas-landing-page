@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../Button";
 
 const FeatureItem = ({ features }: any) => {
   return (
@@ -8,7 +7,7 @@ const FeatureItem = ({ features }: any) => {
         {features.svg ? (
           features.svg
         ) : (
-          <img src={features.img} width={"320px"} />
+          <img src={features.img} width={"320px"} alt="" />
         )}
       </div>
       <div className="featureDescriptions">

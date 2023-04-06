@@ -304,6 +304,8 @@
   flex-direction: column;
   text-align: center;
   gap: 1rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 .newsComponent {
   background-color: #dad7f5;

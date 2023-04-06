@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaArrowRight, FaChevronRight } from "react-icons/fa";
-import { isTemplateSpan } from "typescript";
+
 import Button from "../Button";
 
 const ReadMoreBtn = () => {
