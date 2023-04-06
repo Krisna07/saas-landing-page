@@ -9,6 +9,8 @@ import Features from "./Components/Sections/Features";
 import MoreFeatures from "./Components/Sections/MoreFeatures";
 import SectionType from "./Components/Sections/SectionType";
 import Testimonila from "./Components/Sections/Testimonila";
+import Pricings from "./Components/Sections/Pricings";
+import TrialForm from "./Components/Sections/TrialForm";
 
 function App() {
   const features = [
@@ -233,6 +235,8 @@ function App() {
         sectionDes={" The Features to boost your productivity"}
         sectionItems={<Testimonila />}
       />
+      <Pricings />
+      <TrialForm />
     </div>
   );
 }
