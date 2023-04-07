@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Button from "./Button";
+import Button from "./Navbar/Button";
 import { FaLocationArrow, FaSignal, FaWifi } from "react-icons/fa";
 import { BsBatteryHalf } from "react-icons/bs";
 

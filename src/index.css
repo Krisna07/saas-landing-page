@@ -57,23 +57,10 @@ p {
   cursor: pointer;
   letter-spacing: 1px;
 }
-/* .Pagebutton {
-  width: max-content;
-  height: fit-content;
-  padding: 1rem 2rem;
-  box-sizing: border-box;
-  border-radius: 16px;
-  outline: none;
-  font-size: 16px;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
 
-  color: white;
-  cursor: pointer;
-} */
+Link:focus:active {
+  color: var(--primaryColor);
+}
 .footerSection {
   max-width: 100%;
   padding: 100px 0;

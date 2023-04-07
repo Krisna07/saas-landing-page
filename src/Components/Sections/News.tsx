@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowRight, FaChevronRight } from "react-icons/fa";
 
-import Button from "../Button";
+import Button from "../Navbar/Button";
 
 const ReadMoreBtn = () => {
   const [icon, setIcon] = useState<Boolean>(true);

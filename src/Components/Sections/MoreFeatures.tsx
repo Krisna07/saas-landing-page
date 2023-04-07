@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Button";
+import Button from "../Navbar/Button";
 interface features {
   featuresLeft: any;
   featuresRight: any;

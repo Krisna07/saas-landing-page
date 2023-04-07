@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import Button from "../Button";
+import React, { useEffect, useState } from "react";
+import Button from "./Button";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link, scrollSpy, animateScroll as scroll } from "react-scroll";
+import { NavLink, NavLinkProps } from "react-router-dom";
 
 const logo = (
   <svg
@@ -98,17 +99,39 @@ const logo = (
 );
 
 const Navbar = () => {
-  const [menu, setMenu] = useState<Boolean>(true);
-  const checkScroll = () => {
-    !menu
-      ? (document.body.style.overflowY = "hidden")
-      : (document.body.style.overflowY = "scroll");
+  const [menu, setMenu] = useState(true);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
   };
-  checkScroll();
-  const tabs = ["Home", "About Us", "Pricing", "Story", "Contact Us"];
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const tabs = [
+    { name: "Home", id: "home", offset: -70 },
+    { name: "About Us", id: "aboutus", offset: -70 },
+    { name: "Services", id: "services", offset: -70 },
+    { name: "Testimonial", id: "Testimonial", offset: -70 },
+    { name: "Pricing", id: "pricing", offset: -70 },
+
+    { name: "Story", id: "Story", offset: -70 },
+
+    { name: "Contact Us", id: "contactus", offset: -70 },
+  ];
+
   return (
     <div
-      className="navigationContainer"
+      className={`navigationContainer ${
+        scrollPosition > 20 ? "scrolling" : ""
+      }`}
       style={{ height: `${!menu ? "100vh" : "60px"}` }}
     >
       <div className="logoContainer">
@@ -126,16 +149,19 @@ const Navbar = () => {
         style={menu ? { opacity: "0" } : { opacity: "1" }}
       >
         <div className="menus">
-          {tabs.map((tab: any) => (
+          {tabs.map((tab) => (
             <Link
               className="mobileMenuItems"
               onClick={() => setMenu(!menu)}
-              smooth={true}
-              key={tab}
+              key={tab.id}
               activeClass="active"
-              to={tab.toLowerCase()}
+              to={tab.id.toLowerCase()}
+              spy={true}
+              smooth={true}
+              offset={100}
+              duration={500}
             >
-              {tab}
+              {tab.name}
             </Link>
           ))}
         </div>
@@ -145,15 +171,18 @@ const Navbar = () => {
       </div>
       <div className="menuContainer">
         <div className="menus">
-          {tabs.map((tab: any) => (
+          {tabs.map((tab) => (
             <Link
               className="defaultMenu"
-              smooth={true}
-              key={tab}
+              key={tab.id}
               activeClass="active"
-              to={tab.toLowerCase()}
+              to={tab.id.toLowerCase()}
+              spy={true}
+              smooth={true}
+              offset={tab.offset}
+              duration={500}
             >
-              {tab}
+              {tab.name}
             </Link>
           ))}
         </div>

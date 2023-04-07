@@ -14,6 +14,7 @@ import TrialForm from "./Components/Sections/TrialForm";
 import News from "./Components/Sections/News";
 import Story from "./Components/Sections/Story";
 import Footer from "./Components/Sections/Footer";
+import { Element } from "react-scroll";
 
 function App() {
   const features = [
@@ -219,32 +220,47 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Hero />
-      <SectionType
-        heading="Software Solutions That Fit Your Needs"
-        id="about us"
-        sectionDes={" The Features to boost your productivity"}
-        sectionItems={<Features />}
-      />
-      {features.map((features, x) => (
-        <section className="sections" key={x}>
-          <MoreFeatures
-            featuresLeft={features.featuresLeft}
-            featuresRight={features.featuresRight}
-          />
-        </section>
-      ))}
-      <SectionType
-        heading="Customer Testimonial"
-        id="testimonial"
-        sectionDes={" The Features to boost your productivity"}
-        sectionItems={<Testimonila />}
-      />
-      <Pricings />
-      <TrialForm />
-      <News />
-      <Story />
-      <Footer />
+      <Element name="home" className="sections">
+        <Hero />
+      </Element>
+      <Element name="aboutus" className="sections">
+        <SectionType
+          heading="Software Solutions That Fit Your Needs"
+          id="about us"
+          sectionDes={" The Features to boost your productivity"}
+          sectionItems={<Features />}
+        />
+      </Element>
+      <Element name="services" className="sections" id="services">
+        {features.map((features, x) => (
+          <section className="sections" key={x}>
+            <MoreFeatures
+              featuresLeft={features.featuresLeft}
+              featuresRight={features.featuresRight}
+            />
+          </section>
+        ))}
+      </Element>
+      <Element name="testimonial" className="sections">
+        <SectionType
+          heading="Customer Testimonial"
+          id="testimonial"
+          sectionDes={" The Features to boost your productivity"}
+          sectionItems={<Testimonila />}
+        />
+      </Element>
+      <Element name="pricing" className="sections">
+        <Pricings />
+        <TrialForm />
+      </Element>
+
+      <Element name="story" className="sections">
+        <News />
+        <Story />
+      </Element>
+      <Element name="contactus" className="sections">
+        <Footer />
+      </Element>
     </div>
   );
 }

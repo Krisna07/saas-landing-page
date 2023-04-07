@@ -1,7 +1,7 @@
 import React from "react";
 
 import { FaCheck } from "react-icons/fa";
-import Button from "../Button";
+import Button from "../Navbar/Button";
 
 const Pricings = () => {
   const pricings = [
@@ -9,6 +9,7 @@ const Pricings = () => {
       title: "Basic Plan",
       price: "19",
       annual: "199",
+      btnBackground: false,
       features: [
         "Unlimited Memebers",
         "Unlimited Feedbacks",
@@ -21,6 +22,7 @@ const Pricings = () => {
       title: "Business Plan",
       price: "29",
       annual: "299",
+      btnBackground: true,
       features: [
         "Unlimited Memebers",
         "Unlimited Feedbacks",
@@ -33,6 +35,7 @@ const Pricings = () => {
       title: "Enterprise Plan",
       price: "49",
       annual: "499",
+      btnBackground: false,
       features: [
         "Unlimited Memebers",
         "Unlimited Feedbacks",
@@ -70,8 +73,11 @@ const Pricings = () => {
                   ))}
                 </div>
                 <Button
-                  btnText="Get Started"
-                  btnBackground={"var(--primaryColor)"}
+                  btnText={price.btnBackground ? "Buy Now" : "Get Started"}
+                  color={price.btnBackground ? "" : "black"}
+                  btnBackground={
+                    price.btnBackground ? "var(--primaryColor)" : ""
+                  }
                 />
               </div>
             ))}

@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Button";
+import Button from "../Navbar/Button";
 const logo = (
   <svg
     width="160"
