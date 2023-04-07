@@ -134,21 +134,21 @@ const Navbar = () => {
       }`}
       style={{ height: `${!menu ? "100vh" : "60px"}` }}
     >
-      <div className="logoContainer">
-        <span>{logo}</span>
-        <span className="burgurmenu">
-          {!menu ? (
-            <RxCross1 onClick={() => setMenu(!menu)} />
-          ) : (
-            <RxHamburgerMenu onClick={() => setMenu(!menu)} />
-          )}
-        </span>
-      </div>
-      <div
-        className="mobileMenu"
-        style={menu ? { opacity: "0" } : { opacity: "1" }}
-      >
-        <div className="menus">
+      <div className="mobileMenu">
+        <div className="logoContainer">
+          <span>{logo}</span>
+          <span className="burgurmenu" style={{ color: "var(--headingColor)" }}>
+            {!menu ? (
+              <RxCross1 onClick={() => setMenu(!menu)} />
+            ) : (
+              <RxHamburgerMenu onClick={() => setMenu(!menu)} />
+            )}
+          </span>
+        </div>
+        <div
+          className="menus"
+          style={menu ? { opacity: "0" } : { opacity: "1" }}
+        >
           {tabs.map((tab) => (
             <Link
               className="mobileMenuItems"
@@ -170,6 +170,16 @@ const Navbar = () => {
         </div>
       </div>
       <div className="menuContainer">
+        <div className="logoContainer">
+          <span>{logo}</span>
+          <span className="burgurmenu">
+            {!menu ? (
+              <RxCross1 onClick={() => setMenu(!menu)} />
+            ) : (
+              <RxHamburgerMenu onClick={() => setMenu(!menu)} />
+            )}
+          </span>
+        </div>
         <div className="menus">
           {tabs.map((tab) => (
             <Link
@@ -186,7 +196,9 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-        <Button btnText={"Sign up"} btnBorder={"1px solid gray"} />
+        <div className="btnContainer">
+          <Button btnText={"Sign up"} btnBorder={"1px solid white"} />
+        </div>
       </div>
     </div>
   );

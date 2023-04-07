@@ -23,6 +23,8 @@
   height: 93vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+
   gap: 2rem;
   transition: opacity ease-in 300ms;
   overflow-y: scroll;
@@ -45,10 +47,9 @@
 }
 .logoContainer {
   width: 100%;
-  height: 60px;
+  height: 70px;
   display: flex;
   align-items: center;
-
   justify-content: space-between;
   box-sizing: border-box;
 
@@ -205,38 +206,71 @@ span {
   .navigationContainer {
     width: 100%;
     height: fit-content !important;
-    flex-basis: auto;
     flex-direction: row;
     box-sizing: border-box;
     padding: 0 1rem;
   }
 
   .menuContainer {
-    /* width: 100%; */
-    flex-basis: 2/3;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    grid-template-columns: 15% 70% 15%;
     padding: 0 1rem;
     box-sizing: border-box;
     gap: 2em;
   }
   .logoContainer {
-    flex-basis: 1/3;
     padding: 0;
   }
   .menus {
     width: 100%;
     flex-direction: row;
-    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    /* gap: 1rem; */
     /* padding: 1rem; */
   }
-  .menus a {
+  .menus Link {
     width: max-content;
     text-decoration: none;
   }
   .burgurmenu,
   .mobileMenu {
     display: none !important;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1000px) {
+  .menuContainer {
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "logo logo"
+      "menu btn";
+
+    align-items: center;
+    justify-content: center;
+  }
+  .logoContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: logo;
+  }
+  .menus {
+    grid-area: menu;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    grid-area: btn;
   }
 }
