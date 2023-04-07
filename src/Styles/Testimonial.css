@@ -71,11 +71,32 @@
   background-color: var(--primaryColor);
   border-radius: 50%;
 }
-
 .testimonial:nth-child(2) {
   height: 300px;
   background-color: blanchedalmond;
   /* scale: 1.2; */
   padding: 4rem 2rem;
   transition: all ease-in 200ms;
+}
+.testimonial:first-child,
+.testimonial:last-child {
+  display: none;
+}
+.testimonial:nth-child(2) {
+  height: 300px;
+  background-color: blanchedalmond;
+  /* scale: 1.2; */
+  padding: 4rem 2rem;
+  transition: all ease-in 200ms;
+}
+@media (min-width: 750px) {
+  .testimonial:last-child {
+    display: block;
+  }
+}
+
+@media (min-width: 950px) {
+  .testimonial:first-child {
+    display: block;
+  }
 }

@@ -132,7 +132,16 @@ const Testimonila = () => {
       <FaChevronRight className="forwards sliderBtn" onClick={prevSlide} />
       <div className="dotsContainer">
         {dots.map((dot, x) => (
-          <div className="navDots" key={x} onClick={() => navTesti(dot)}></div>
+          <div
+            className="navDots"
+            key={x}
+            onClick={() => navTesti(dot)}
+            style={
+              dots.indexOf(dot) === index
+                ? { border: "1px solid gray", background: "black" }
+                : {}
+            }
+          ></div>
         ))}
       </div>
     </>
