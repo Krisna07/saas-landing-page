@@ -1,13 +1,21 @@
 import React from "react";
 
-const Button = ({ btnText, btnIcon, btnBackground, btnBorder, color }: any) => {
+const Button = ({
+  btnText,
+  btnIcon,
+  btnBackground,
+  btnBorder,
+  color,
+  btnPadding,
+}: any) => {
   const btnStyle = {
     background: btnBackground ? btnBackground : "transparent",
     border: btnBorder ? btnBorder : "none",
     color: color ? color : "white",
+    padding: btnPadding ? btnPadding : "",
   };
   return (
-    <button className="Pagebutton" style={btnStyle}>
+    <button className="pageBtn" style={btnStyle}>
       {btnText}
     </button>
   );

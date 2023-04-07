@@ -140,7 +140,7 @@ const Navbar = () => {
           ))}
         </div>
         <div className="btnContainer">
-          <Button btnText={"Contact Us"} btnBorder={"1px solid white"} />
+          <Button btnText={"Sign up"} btnBorder={"1px solid white"} />
         </div>
       </div>
       <div className="menuContainer">
@@ -157,7 +157,7 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-        <Button btnText={"Contact Us"} btnBorder={"1px solid white"} />
+        <Button btnText={"Sign up"} btnBorder={"1px solid gray"} />
       </div>
     </div>
   );
