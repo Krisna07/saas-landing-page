@@ -148,7 +148,6 @@ const Navbar = () => {
           {tabs.map((tab: any) => (
             <Link
               className="defaultMenu"
-              onClick={() => setMenu(!menu)}
               smooth={true}
               key={tab}
               activeClass="active"

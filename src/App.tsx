@@ -236,7 +236,7 @@ function App() {
       ))}
       <SectionType
         heading="Customer Testimonial"
-        id=""
+        id="testimonial"
         sectionDes={" The Features to boost your productivity"}
         sectionItems={<Testimonila />}
       />

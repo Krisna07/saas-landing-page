@@ -1,0 +1,81 @@
+.testimonialContainer {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  grid-template-columns: repeat(400px, 5);
+  gap: 2rem;
+  overflow: hidden;
+  /* overflow-x: scroll; */
+  position: relative;
+}
+
+.testimonial {
+  min-width: 400px;
+  height: fit-content;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: grid;
+  gap: 1rem;
+  background-color: #f7f5ff;
+  border-radius: 16px;
+}
+
+.userDetails {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.profileContainer {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profileContainer img {
+  object-fit: cover;
+}
+.sliderBtn {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--primaryColor);
+}
+.forwards {
+  right: 0;
+}
+.backwards {
+  left: 0;
+}
+
+.dotsContainer {
+  width: 100%;
+  max-width: 1200px;
+  left: 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  bottom: 0;
+  padding: 1rem 0;
+}
+.navDots {
+  width: 10px;
+  height: 10px;
+  background-color: var(--primaryColor);
+  border-radius: 50%;
+}
+
+.testimonial:nth-child(2) {
+  height: 300px;
+  background-color: blanchedalmond;
+  /* scale: 1.2; */
+  padding: 4rem 2rem;
+  transition: all ease-in 200ms;
+}
