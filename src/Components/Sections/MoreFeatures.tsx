@@ -25,9 +25,7 @@ const MoreFeatures = ({ featuresLeft, featuresRight }: features) => {
             <div className="featureImage" style={{ justifyContent: "start" }}>
               <img src={featuresLeft.img} alt="" width={"100%"} />
             </div>
-            <div className="featureSvgs" style={{ left: "50%" }}>
-              {featuresLeft.svg}
-            </div>
+          
           </>
         )}
       </div>
@@ -38,12 +36,12 @@ const MoreFeatures = ({ featuresLeft, featuresRight }: features) => {
             <div className="featureImage">
               <img src={featuresRight.img} alt="" width={"100%"} />
             </div>
-            <div className="featureSvgs">{featuresRight.svg}</div>
+            
           </>
         ) : (
           <>
             <div className="heading">
-              <h2 className="headingMain">Easy Advance Protection</h2>
+              <h2 className="headingMain">{featuresRight.heading}</h2>
               <p className="paragraphMain">
                 Use marketing automation to identify hot leads and email your
                 sales team telling them to follow up. Nurture and contact leads

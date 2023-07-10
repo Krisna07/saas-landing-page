@@ -730,7 +730,7 @@ const Features = () => {
       title: "Automation",
     },
     {
-      img: "https://s3-alpha-sig.figma.com/img/6261/d1d1/c336a8fa61e766556800f13d08a94738?Expires=1681084800&Signature=SdaE0GUeeQt~wDkcA15VAVCQGVY5eRMx6kAix4cP6aX2Pbt-IRVflzQYZXf~Yii1hxvrgRnYGM9Ftf6SjLOlWteyNHb7VgsH2xy-AExG2owJw-fPdnHnIjl40szYHCA~XA6Kcja~lGO~XKbbgCYf~sVkc~4BIB8s5yW-l83P-FQwj9BaIdxdfXOJR4jb06qf-adYWEoIq4hKMMNh-QHr~vU~n3OBEWKdoXjmwJnkNEIRqLmnWZoVXDLx8DsfgXogPDZNGHCs~2RHOXOb5PE1tjDBsmlqOX2yvW563GUkU6PcuuampFOhgK-K3AgnhQZ1k3sOn5dv1tYEmW-inyQ~0A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      img: "/Images/budgeting.jpg",
       title: "Budgeting Tools",
     },
   ];

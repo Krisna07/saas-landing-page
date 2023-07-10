@@ -22,6 +22,7 @@ const Button = ({
       : "1px solid var(--primaryColor)",
     color: !hover ? (color ? color : "white") : "black",
     padding: btnPadding ? btnPadding : "",
+    width:"fit-content"
   };
 
   return (

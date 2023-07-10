@@ -61,7 +61,7 @@ const Hero = () => {
            <img src="/Images/laptopmockup.png" alt="" className="laptopImage"  />
             
             <div className="analytics">
-           <img className="analytics_image" src="/Images/analytics.jpg" alt=""/>
+           <img className="analytics_image" src="/Images/dashboard.png" alt=""/>
             </div>
             <span className="laptopName">Macbook Pro</span>
           </div>
@@ -99,7 +99,7 @@ const Hero = () => {
               </div>
 
               <div className="analytics">
-              <img className="analytics_image" src="/Images/analytics.jpg" alt=""/>
+              <img className="analytics_image" src="/Images/dashboard.png" alt=""/>
 
               </div>
               <div className="iphoneBottom"></div>
@@ -114,7 +114,7 @@ const Hero = () => {
               <div className="camera"></div>
               </div>
               <div className="analytics">
-              <img className="analytics_image" src="/Images/analytics.jpg" alt=""/>
+              <img className="analytics_image" src="/Images/dashboard.png" alt=""/>
 
               </div>
               <div className="iphoneBottom"></div>

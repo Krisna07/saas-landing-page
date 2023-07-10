@@ -16,7 +16,7 @@ const TrialForm = () => {
         <div className="trailform">
           <label className="email">
             <input type="text" placeholder="Enter your email" />{" "}
-            <Button btnText="Sign Up" btnBackground="var(--primaryColor)" />
+           <button className="trailBtn">Signup</button>
           </label>
           <p className="termsCo">
             By clicking on signup you confirm that you agree with our Terms and

@@ -92,9 +92,9 @@
   height: 85%;
   position: absolute;
   top: 5%;
-  left: 10%;
+  left: 11%;
   z-index: 10;
-  background-color: #7373ff;
+  background-color: black;
   overflow: hidden;
 }
 
@@ -114,7 +114,9 @@
   height: 650px;
   position: relative;
   object-fit: fill;
-  background-color: #6d60ff;
+  object-position: center;
+  
+ 
 }
 
 .camera {
